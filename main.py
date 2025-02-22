@@ -17,7 +17,7 @@ class NewsAPIWrapper:  # Wrapper class to make it a Langchain Tool
         self.client = NewsApiClient(api_key=api_key)
 
     def get_top_headlines(self, query: str) -> str: # Added query parameter for tool usage
-        """Fetch top news headlines based on a query."""
+        """Fetch top news headlines based on a query. """
         try:
             response = self.client.get_top_headlines(q=query, language='en') # Added q parameter for query
             articles = response.get('articles', [])
