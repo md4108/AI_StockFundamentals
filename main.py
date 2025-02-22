@@ -25,7 +25,7 @@ class NewsAPIWrapper:  # Wrapper class to make it a Langchain Tool
                 headlines = "\n".join([f"- {article['title']}: {article['description']}" for article in articles])
                 return headlines
             else:
-                return "No top headlines found for the given query."
+                return "No top headlines found for the given query. "
         except Exception as e:
             return f"Error fetching news: {e}"
 
