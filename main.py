@@ -54,7 +54,7 @@ rss_feed = RSSFeedWrapper(rss_url="https://rss.cnn.com/rss/edition.rss")
 news_api_tool = Tool(
     name="NewsAPI",
     func=news_api.get_top_headlines,
-    description="Useful for fetching the latest news headlines.  Input should be a search query related to a topic or company."
+    description="Useful for fetching the latest news headlines. Input should be a search query related to a topic or company."
 )
 
 rss_feed_tool = Tool(
